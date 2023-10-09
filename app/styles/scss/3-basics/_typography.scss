@@ -8,15 +8,34 @@
 //    font-weight:400
 // }
 // .lato_medium{
-  //     @extend .lato_regular_base;
-  //    font-weight:400
-  // }
-  // .lato_regular{
-    //     @extend .lato_regular_base;
-    //    font-weight:200
+//     @extend .lato_regular_base;
+//    font-weight:400
+// }
+// .lato_regular{
+//     @extend .lato_regular_base;
+//    font-weight:200
 // }
 
+// @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap");
 
+.alegreya_regular_base {
+  font-family: "Alegreya";
+}
 
+.font_400 {
+  @extend .alegreya_regular_base;
+  font-weight: 400;
+}
+.font_500 {
+  @extend .alegreya_regular_base;
+  font-weight: 500;
+}
+.font_600 {
+  @extend .alegreya_regular_base;
+  font-weight: 600;
+}
 
-
+.font_700 {
+  @extend .alegreya_regular_base;
+  font-weight: 700;
+}

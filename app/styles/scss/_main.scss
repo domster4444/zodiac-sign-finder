@@ -1,4 +1,5 @@
 // This is the single file output by sass . It is intended to ONLY @inport other files.
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap");
 
 //?1-HELPERS
 @import "1-helpers/functions";
@@ -23,6 +24,7 @@
 @import "3-basics/responsive_mixin";
 @import "3-basics/selection-colors";
 @import "3-basics/typography";
+@import "3-basics/buttons";
 
 //?4-LAYOUT   SHARED BIG COMPONENTS
 @import "4-layout/body-layout";
@@ -31,7 +33,8 @@
 @import "4-layout/toolbar";
 
 //? 5-MODULES
-@import "5-modules/work-section";
+@import "5-modules/navbar";
+@import "5-modules/scrollbar";
 
 //? 5-PAGES
 @import "6-pages/home-page";

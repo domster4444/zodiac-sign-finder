@@ -2051,10 +2051,6 @@ template {
   padding: 0px;
 }
 
-:root {
-  font-size: 10px;
-}
-
 body {
   position: relative;
   overflow-x: hidden;
@@ -2082,6 +2078,25 @@ html {
   --animate-duration: 2s;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  transform-origin: center center;
+  animation: rotate 2s linear infinite;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -2089,4 +2104,222 @@ a {
 }
 a:hover, a:focus {
   color: rgb(94, 199, 200);
-}/*# sourceMappingURL=global.css.map */
+}
+
+.alegreya_regular_base, .font_700, .font_600, .font_500, .font_400 {
+  font-family: "Alegreya";
+}
+
+.font_400 {
+  font-weight: 400;
+}
+
+.font_500 {
+  font-weight: 500;
+}
+
+.font_600 {
+  font-weight: 600;
+}
+
+.font_700 {
+  font-weight: 700;
+}
+
+.primary-red-btn {
+  color: #ffffff;
+  background-color: #c8191c;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+}
+.primary-red-btn:hover {
+  background-color: #9b1316;
+}
+.primary-red-btn:active {
+  background-color: #6d0e0f;
+}
+.primary-red-btn:focus {
+  outline: none;
+}
+.primary-red-btn--small {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.5rem;
+}
+.primary-red-btn--large {
+  padding: 1.5rem 3rem;
+  font-size: 1rem;
+}
+.primary-red-btn--full-width {
+  width: 100%;
+}
+
+.nav__header {
+  padding: 0.5rem;
+}
+.nav__header .nav {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__header .nav ul {
+  display: flex;
+}
+.nav__header .nav ul li {
+  padding: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0rem 0.35rem;
+  font-size: 0.85rem;
+}
+.nav__header .nav ul li img {
+  width: 13rem;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #040000; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #300a0b; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #040000; /* creates padding around scroll thumb */
+}
+
+.hero__section {
+  padding: 2rem 1rem 3.5rem 1rem;
+  position: relative;
+  background: linear-gradient(180deg, #000000, #2f0a0b 50%, #300a0b);
+}
+.hero__section .zodiac-bg-abstract {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30rem;
+  background-image: url("https://i.imgur.com/gADllK7.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero__section .hero-body {
+  position: relative;
+  z-index: 9;
+}
+.hero__section h1.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+@media only screen and (max-width: 400px) {
+  .hero__section h1.heading {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .hero__section h1.heading {
+    font-size: 1.5rem;
+  }
+}
+.hero__section h1.heading span {
+  color: #c8191c;
+}
+.hero__section .sub_heading__container {
+  display: flex;
+  justify-content: center;
+}
+.hero__section h2.sub__heading {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.15rem;
+  color: #ffffff;
+}
+@media only screen and (min-width: 960px) {
+  .hero__section h2.sub__heading {
+    width: 60%;
+  }
+}
+.hero__section .button__container {
+  display: flex;
+  justify-content: center;
+}
+.hero__section .button__container button {
+  margin: 1.5rem 1.5rem 0rem 1.5rem;
+}
+.hero__section .hero__date-input {
+  width: 60%;
+}
+@media only screen and (max-width: 450px) {
+  .hero__section .hero__date-input {
+    width: 90%;
+  }
+}
+
+.zodiac_card__section {
+  padding: 0rem 0 3rem 0;
+  background: linear-gradient(180deg, #300a0b, #2f0a0b 50%, #300a0b);
+}
+.zodiac_card__section .zodiac_card__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.zodiac_card__section .zodiac_card__container .zodiac_cards {
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  width: 30%;
+}
+.zodiac_card__section .zodiac_card__container .zodiac_cards .zodiac_card_right_division {
+  margin-left: 1rem;
+}
+@media only screen and (min-width: 960px) {
+  .zodiac_card__section .zodiac_card__container .zodiac_cards .zodiac_card_right_division {
+    max-width: 10rem;
+  }
+}
+.zodiac_card__section .zodiac_card__container .zodiac_cards .zodiac_card_right_division h3.zodiac_card__heading {
+  margin-top: 0 !important;
+  color: #ffffff;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.zodiac_card__section .zodiac_card__container .zodiac_cards .zodiac_card_right_division p.zodiac_card__desc {
+  color: #ffffff;
+  margin-top: 0.55rem;
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 900px) {
+  .zodiac_card__section .zodiac_card__container .zodiac_cards {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .zodiac_card__section .zodiac_card__container .zodiac_cards {
+    width: 90%;
+  }
+}
+.zodiac_card__section .zodiac_card__container .zodiac_cards img {
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+.detail-dialog {
+  color: #ffffff;
+  background: linear-gradient(180deg, #000000, #2f0a0b 50%, #300a0b);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.detail-dialog h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+span.red {
+  color: #c8191c;
+}/*# sourceMappingURL=globals.css.map */

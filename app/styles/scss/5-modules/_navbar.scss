@@ -1,0 +1,23 @@
+.nav__header {
+  padding: 0.5rem;
+  .nav {
+    background: $transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      li {
+        padding: 0.5rem;
+        color: $white;
+        cursor: pointer;
+        margin: 0rem 0.35rem;
+        font-size: 0.85rem;
+        img {
+          width: 13rem;
+        }
+      }
+    }
+  }
+}
